@@ -1,0 +1,4 @@
+
+dez 19, 2020 12:10:10.97 NEW SESSION
+dez 19, 2020 12:10:10.97 [12116:13260:1219/111010.971:ERROR:device_event_log_impl.cc(211)] [11:10:10.971] Bluetooth: bluetooth_adapter_winrt.cc:1073 Getting Default Adapter failed.
+dez 19, 2020 12:19:39.11 [1219/111939.118:ERROR:directory_reader_win.cc(43)] FindFirstFile: O sistema não pode encontrar o caminho especificado. (0x3)

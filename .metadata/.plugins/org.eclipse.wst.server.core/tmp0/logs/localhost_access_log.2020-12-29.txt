@@ -1,0 +1,16 @@
+127.0.0.1 - - [29/Dec/2020:23:04:37 -0200] "GET / HTTP/1.1" 404 705
+0:0:0:0:0:0:0:1 - - [29/Dec/2020:23:04:39 -0200] "GET /Projeto_Final/home.html HTTP/1.1" 200 35841
+0:0:0:0:0:0:0:1 - - [29/Dec/2020:23:04:39 -0200] "GET /Projeto_Final/css/home.css HTTP/1.1" 200 2861
+0:0:0:0:0:0:0:1 - - [29/Dec/2020:23:04:39 -0200] "GET /Projeto_Final/css/style.css HTTP/1.1" 200 4671
+0:0:0:0:0:0:0:1 - - [29/Dec/2020:23:04:40 -0200] "GET /Projeto_Final/images/react.png HTTP/1.1" 200 3401
+0:0:0:0:0:0:0:1 - - [29/Dec/2020:23:04:40 -0200] "GET /Projeto_Final/images/labelwissen.png HTTP/1.1" 200 14010
+0:0:0:0:0:0:0:1 - - [29/Dec/2020:23:04:40 -0200] "GET /Projeto_Final/images/logowissen.png HTTP/1.1" 200 11980
+0:0:0:0:0:0:0:1 - - [29/Dec/2020:23:04:40 -0200] "GET /Projeto_Final/js/nav.js HTTP/1.1" 200 1104
+0:0:0:0:0:0:0:1 - - [29/Dec/2020:23:04:40 -0200] "GET /Projeto_Final/js/home.js HTTP/1.1" 200 679
+0:0:0:0:0:0:0:1 - - [29/Dec/2020:23:04:40 -0200] "GET /Projeto_Final/images/java.png HTTP/1.1" 200 28772
+0:0:0:0:0:0:0:1 - - [29/Dec/2020:23:04:40 -0200] "GET /Projeto_Final/images/marketing.jpg HTTP/1.1" 200 49445
+0:0:0:0:0:0:0:1 - - [29/Dec/2020:23:04:40 -0200] "GET /Projeto_Final/images/csharp.png HTTP/1.1" 200 10269
+0:0:0:0:0:0:0:1 - - [29/Dec/2020:23:04:40 -0200] "GET /Projeto_Final/images/day-trading.jpg HTTP/1.1" 200 62803
+0:0:0:0:0:0:0:1 - - [29/Dec/2020:23:04:40 -0200] "GET /Projeto_Final/images/wissen%20full.png HTTP/1.1" 200 13520
+0:0:0:0:0:0:0:1 - - [29/Dec/2020:23:04:40 -0200] "GET /Projeto_Final/images/photoshop-cs6-logo.png HTTP/1.1" 200 416057
+0:0:0:0:0:0:0:1 - - [29/Dec/2020:23:04:40 -0200] "GET /favicon.ico HTTP/1.1" 404 716

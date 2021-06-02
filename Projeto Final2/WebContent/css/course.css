@@ -1,0 +1,74 @@
+/* course.css */
+
+body{
+    font-family: 'Bree Serif', serif;
+}
+
+.container-fluid{
+    height: 90vh;
+    background-color: #fafafa;
+}
+
+.main-div{
+    margin-top: 75px;
+}
+
+.left-space{
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.btns{
+    margin-top: 10%;
+}
+
+.btn-form{
+    margin-left: 5%;
+}
+
+.form-modulo, .form-aula{
+    width: 500px;
+    margin-top: 5%;
+}
+
+.form-aula{
+    display: none;
+}
+
+
+/* Card Style*/
+
+.buy-btn{
+    color: rgba(255, 255, 255, 1);
+    padding: 10px 24px;
+    font-family: 'Bree Serif', serif;
+    font-size: 17px;
+    letter-spacing: 0.05rem;
+    line-height: 1.88;
+    background-color: #1f9376;
+    border-radius: 10px;
+}
+
+.buy-btn:hover{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+    background-color: #176955;
+}
+
+.price{
+    font-family: 'Bree Serif', serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #3C3B37;
+}
+
+.rating{
+    width: 100%;
+}
+
+.checked{
+    color: orange;
+}
+
+/*--------------------------------------------------------------*/

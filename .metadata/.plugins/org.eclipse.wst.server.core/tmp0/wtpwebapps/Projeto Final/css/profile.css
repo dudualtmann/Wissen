@@ -1,0 +1,70 @@
+/* profile.css */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.title{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    margin-top: 75px;
+    font-size: 60px;
+}
+
+.profile-card{
+    margin-top: 100px;
+    width: 100%;
+    background-color: #21CF94;
+    border-radius: 10px;
+    height: 100%;
+    font-family: 'Bree Serif', serif;
+    opacity: 90%;
+    box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.2);
+}
+
+.custom-file:hover {
+    cursor: pointer;
+    opacity: 70%;
+}
+
+.img-perfil{
+    vertical-align: middle;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.form-group label{
+    color: white;
+}
+
+.form-group{
+    margin-top: 80px;
+}
+
+.form-group .btn{
+    width: 250px;
+}
+
+.row{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Mobile Responsive */
+
+@media screen and (max-width:1000px){
+    .group-foto{
+        margin-bottom: 50px;
+        margin-left: 15%;
+    }
+
+    .form-group{
+        margin-top: 50px;
+    }
+}
+

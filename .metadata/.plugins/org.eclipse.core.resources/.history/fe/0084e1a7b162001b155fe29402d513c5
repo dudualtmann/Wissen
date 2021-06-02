@@ -1,0 +1,4 @@
+$(document).on('click', ".video",function(){
+	var link = $(this).attr("href");
+	
+});

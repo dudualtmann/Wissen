@@ -1,0 +1,297 @@
+/* style.css */
+
+/* --- Header ---- */
+
+.menu-topo-wissen{
+    width: 100%;
+}
+
+.logo-wissen{
+    margin-left: 25px;
+    width: 170px;
+}
+
+.header-wissen{
+    height: 75px;
+    position: fixed;
+    top: 0;
+    z-index: 120;
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    border-bottom: 1px solid #dadada;
+    box-sizing: border-box;
+}
+
+.login-box{
+    display: flex;
+    flex: 0 0 auto;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.login-svg{
+    width: 30px;
+}
+
+.btn-cadastrar{
+    background: #D9E7EE;
+    right: 25px;
+    color: #1F4F66;
+    top: 18px;
+    padding: 13px 20px;
+    border-radius: 26px;
+    font-weight: 600;
+    margin-right: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.menu-itens{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Bree Serif', serif;
+}
+
+.menu-itens span a{
+    text-decoration: none;
+    color: #1F4F66;
+    font-size: 1.4rem;
+}
+
+.menu-itens span a:hover{
+    color: #1f50669a;
+}
+
+.nav-item{
+    margin-left: 5%;
+}
+
+.burger{
+    display: none;
+}
+
+.burger div{
+    width: 25px;
+    height: 4px;
+    background-color:  #1F4F66;
+    margin: 5px;
+}
+
+.nav-links{
+    font-family: 'Bree Serif', serif;
+    list-style: none;
+    color: #1F4F66;
+    font-size: 1.4rem;
+    display: none;
+}
+
+.nav-links a{
+    color: #1F4F66;
+    text-decoration: none;
+}
+
+.nav-links a:hover{
+    color: #1f50669a;
+    text-decoration: none;
+}
+
+.nav-mobile{
+    display: none;
+}
+
+/* CSS da NAV de quanto está logado */
+
+.btn-cart{
+    color: #1F4F66;
+    font-size: 25px;
+    padding: 13px 20px;
+    
+}
+
+.btn-heart{
+    color: #1F4F66;
+    font-size: 25px;
+    padding: 13px 20px;
+    border-radius: 26px;
+    margin-right: 20px;
+}
+
+.login-box a:hover{
+    color:  #1f50669a;
+}
+
+.span-search {
+    border: 1px solid grey;
+    background: #f1f1f1;
+    border-radius: 25px;
+    width: 100%;
+    margin-left: 5%;
+}
+
+.span-search input{
+    padding: 10px;
+    font-size: 17px;
+    border: none;
+    width: 90%;
+    background: transparent;
+    outline: none;
+}
+
+.span-search button {
+    width: 10%;
+    padding: 10px;
+    float: left;
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+    color: #1F4F66;
+    font-size: 17px;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+}
+
+.btn-cursos{
+    font-family: 'Bree Serif', serif;
+    text-decoration: none;
+    color: #1F4F66;
+    font-size: 1.4rem;
+    margin-right: 5%;
+}
+
+.btn-cursos:hover{
+    text-decoration: none;
+    color:  #1f50669a;
+}
+
+.login-svg{
+    color: #1F4F66; font-size: 30px;
+    padding: 13px 20px;
+    border-radius: 26px;
+    margin-right: 20px;
+}
+
+.cart-number{
+    position: absolute;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    top: 15px;
+    right: 327px;
+    background-color: red;
+    width: 20px;
+    border-radius: 80%;
+}
+
+/* Footer */
+
+.footer-wissen{
+    width: 100vw;
+    background-color: rgb(241, 241, 241);
+}
+
+.footer-slogan h1{
+    color: black;
+    font-family: 'Bree Serif', serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.88;
+}
+
+.copyright p{
+    color:  rgba(121, 121, 121, 0.7);
+    font-family: Inter;
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+
+
+@media screen and (max-width:848px){
+
+    .nav-mobile{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .wis-menu{
+        position: absolute;
+        left: 0;
+    }
+
+    .menu-topo-wissen .wis-menu,.menu-topo-wissen .menu-itens, .menu-topo-wissen .login-box{
+        display: none;
+    }
+
+    .burger{
+        display: block;
+        margin-right: 25px;
+        cursor: pointer;
+    }
+
+    .nav-links{
+        display: flex;
+        position: absolute;
+        right: 0px;
+        height: 110vh;
+        top: 75px;
+        background-color:#fff;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        transition: transform 0.5s ease-in;
+        transform: translateX(100%);
+    }
+
+    .nav-links li{
+        padding: 20px;
+        opacity: 0;
+    }
+
+    .nav-li1{
+        margin-top: 20px;
+    }
+
+    .login-box{
+        margin-left: 40%;
+    }
+
+    .span-search input{
+        width: 80%;
+    }
+    
+    .span-search{
+        width: 70%;
+        position: absolute;
+        left: 0;
+    }
+
+    .btn-heart{
+        margin-right: 0;
+    }
+
+    .btn-cursos{
+        margin-right: 0;
+    }
+
+    
+
+}
+
+.nav-active{
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}

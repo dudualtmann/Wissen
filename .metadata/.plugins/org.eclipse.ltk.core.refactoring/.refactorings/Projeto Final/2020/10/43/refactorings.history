@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;WEB-INF&apos; to &apos;Projeto Final/src&apos;&#x0D;&#x0A;- Original project: &apos;Projeto Final&apos;&#x0D;&#x0A;- Destination element: &apos;Projeto Final/src&apos;&#x0D;&#x0A;- Original element: &apos;WEB-INF&apos;" description="Copy folder" destination="/src" element1="WebContent/WEB-INF" files="0" flags="589830" folders="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1603552191112" units="0" version="1.0"/>
+</session>

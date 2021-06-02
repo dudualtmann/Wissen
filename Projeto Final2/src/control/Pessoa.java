@@ -1,0 +1,149 @@
+package control;
+
+import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import javax.persistence.Column;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Inheritance;
+import javax.persistence.MappedSuperclass;
+import javax.persistence.InheritanceType;
+
+@MappedSuperclass
+@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
+public class Pessoa {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	protected int id;
+
+	@Column(nullable = false, length = 100)
+	protected String nome;
+	
+	@Column(nullable = false)
+	protected String email;
+	
+	@Column(nullable = true, length = 14)
+	protected String cpf;
+	
+	@Column(nullable = true)
+	protected String sexo;
+	
+	@Column(nullable = true)
+	protected Date dataNascimento;
+	
+	@Column(nullable = true)
+	protected String nacionalidade;
+	
+	@Column(nullable = false, length = 25)
+	protected String senha;
+	
+	@Column(nullable = true)
+	protected File fotoPerfil;
+	
+	@Column(columnDefinition = "INT DEFAULT 0")
+	protected int accStatus; // 0 - Conta Ativa / 1 - Conta Deletada / 2 - Conta Inativa
+	
+	// Getters and Setters
+	
+	public String getDataFormatado()
+	{
+		SimpleDateFormat formato = new SimpleDateFormat("yyyy/MM/dd");
+		if(dataNascimento == null)
+			return null;
+		else {
+		String data = formato.format(getDataNascimento());
+		data = data.replace("/", "-");
+		return data;
+		}
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getCpf() {
+		return cpf;
+	}
+
+	public void setCpf(String cpf) {
+		this.cpf = cpf;
+	}
+
+	public String getSexo() {
+		return sexo;
+	}
+
+	public void setSexo(String sexo) {
+		this.sexo = sexo;
+	}
+
+	public Date getDataNascimento() {
+		return dataNascimento;
+	}
+
+	public void setDataNascimento(Date dataNascimento) {
+		this.dataNascimento = dataNascimento;
+	}
+
+	public String getNacionalidade() {
+		return nacionalidade;
+	}
+
+	public void setNacionalidade(String nacionalidade) {
+		this.nacionalidade = nacionalidade;
+	}
+
+	public String getSenha() {
+		return senha;
+	}
+
+	public void setSenha(String senha) {
+		this.senha = senha;
+	}
+
+	public File getFotoPerfil() {
+		return fotoPerfil;
+	}
+
+	public void setFotoPerfil(File fotoPerfil) {
+		this.fotoPerfil = fotoPerfil;
+	}
+
+	public int getAccStatus() {
+		return accStatus;
+	}
+
+	public void setAccStatus(int accStatus) {
+		this.accStatus = accStatus;
+	}
+	
+
+	
+	
+
+
+}

@@ -1,0 +1,1 @@
+Wissen é uma plataforma de cursos totalmente movimentada pela comunidade, ou seja, qualquer pessoa pode ser um instrutor ou um aluno e publicar ou comprar cursos de qualquer área do conhecimento.

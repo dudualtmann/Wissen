@@ -1,0 +1,358 @@
+/* index.css */
+
+*{
+    outline: none;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/*rgba(244, 250, 255, 1); - Branco meio cinza legal p background*/
+
+body{
+    height: 100%;
+    margin: 0;
+    font-family: 'Bree Serif', serif;
+    overflow-x: hidden;
+}
+
+/* --- Header ---- */
+
+.menu-topo-wissen{
+    width: 100%;
+}
+
+.logo-wissen{
+    margin-left: 25px;
+    width: 170px;
+}
+
+.header-wissen{
+    height: 75px;
+    position: fixed;
+    top: 0;
+    z-index: 120;
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    border-bottom: 1px solid #dadada;
+    box-sizing: border-box;
+}
+
+.login-box{
+    display: flex;
+    flex: 0 0 auto;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.login-svg{
+    width: 30px;
+}
+
+.btn-cadastrar{
+    background: #D9E7EE;
+    right: 25px;
+    color: #1F4F66;
+    top: 18px;
+    padding: 13px 20px;
+    border-radius: 26px;
+    font-weight: 600;
+    margin-right: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.menu-itens{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Bree Serif', serif;
+}
+
+.menu-itens span a{
+    text-decoration: none;
+    color: #1F4F66;
+    font-size: 1.4rem;
+}
+
+.menu-itens span a:hover{
+    color: #1f50669a;
+}
+
+.nav-item{
+    margin-left: 5%;
+}
+
+.burger{
+    display: none;
+}
+
+.burger div{
+    width: 25px;
+    height: 4px;
+    background-color:  #1F4F66;
+    margin: 5px;
+}
+
+.nav-links{
+    font-family: 'Bree Serif', serif;
+    list-style: none;
+    color: #1F4F66;
+    font-size: 1.4rem;
+    display: none;
+}
+
+.nav-links a{
+    color: #1F4F66;
+    text-decoration: none;
+}
+
+.nav-links a:hover{
+    color: #1f50669a;
+}
+
+.nav-mobile{
+    display: none;
+}
+
+/* --- Main ---- */
+
+
+/* Home-Container */
+#home-container{
+    padding: 160px 30px;
+    width: 100vw;
+    height: 100%;
+    background-color: #1f9376;
+    /*background-color: rgb(0 46 123);*/
+    align-items: center;
+}
+
+h1{
+    color: white;
+    font-family: 'Bree Serif', serif;
+}
+
+.txt-destaque {
+    color: #00ffd2;
+   /* color: rgba(43, 164, 255, 1);*/
+    font-family: 'Bree Serif', serif;
+    font-weight: bold;
+    line-height: 1.11;
+    text-align: left;
+}
+
+.descricao-box {
+    margin-top: 72px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.descricao-box p {
+    width: 54%;
+    max-width: 380px;
+    font-family: Inter;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.39;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.7);
+    margin-right: 60px;
+    margin-bottom: 24px;
+}
+
+.btn1 {
+    width: 50%;
+    
+    color: rgba(255, 255, 255, 1);
+    padding: 16px 24px;
+    font-family: 'Bree Serif', serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.88;
+}
+
+b{
+    font-weight: bold;
+}
+
+.h1-text{
+    font-size: 3.0rem;
+}
+
+.h1-text-2{
+    font-size: 2.5rem;
+}
+
+/* Cursos-Container */
+
+#cursos-container{
+    padding: 160px 30px;
+    width: 100vw;
+    height: 100%;
+    background-color: rgba(244, 250, 255, 1);
+    align-items: center;
+}
+
+.infos-cursos{
+    margin-left: 3%;
+}
+
+.infos-box h1{
+    font-family: 'Bree Serif', serif;
+    color: black;
+}
+
+.txt-destaque2{
+    color: #1f9376;
+}
+
+/* Calendar-Container */
+
+#calendar-container{
+    padding: 160px 30px;
+    width: 100vw;
+    height: 100%;
+    background-color: #1f9376;
+    align-items: center;
+}
+
+/* Instrutor-Container */
+
+#instrutor-container{
+    padding: 50px 30px;
+    width: 100vw;
+    height: 100%;
+    background-color: rgba(244, 250, 255, 1);
+    align-items: center;
+}
+
+/* Footer */
+
+.footer-wissen{
+    width: 100vw;
+    background-color: rgb(241, 241, 241);
+}
+
+.footer-slogan h1{
+    color: black;
+    font-family: 'Bree Serif', serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.88;
+}
+
+.copyright p{
+    color:  rgba(121, 121, 121, 0.7);
+    font-family: Inter;
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+/* Mobile (Responsividade) */
+
+@media screen and (max-width:1024px){
+    
+        .menu-itens{
+            justify-content: flex-end;
+        }
+    
+}
+
+@media screen and (max-width:848px){
+
+    .nav-mobile{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .wis-menu{
+        position: absolute;
+        left: 0;
+    }
+
+    .menu-topo-wissen .wis-menu,.menu-topo-wissen .menu-itens, .menu-topo-wissen .login-box{
+        display: none;
+    }
+
+    .burger{
+        display: block;
+        margin-right: 25px;
+        cursor: pointer;
+    }
+
+    .nav-links{
+        display: flex;
+        position: absolute;
+        right: 0px;
+        height: 110vh;
+        top: 75px;
+        background-color:#fff;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        transition: transform 0.5s ease-in;
+        transform: translateX(100%);
+    }
+
+    .nav-links li{
+        padding: 20px;
+        opacity: 0;
+    }
+
+    .nav-li1{
+        margin-top: 20px;
+    }
+
+    .login-box{
+        margin-left: 40%;
+    }
+
+    .h1-text{
+        font-size: 2.0rem;
+    }
+
+    .h1-text-2{
+        font-size: 1.8rem;
+    }
+
+    .descricao-box{
+        margin-top: 30px;
+    }
+
+    .descricao-box p{
+        width: 100%;
+        font-size: 1.2rem;
+    }
+
+    .btn1{
+        width: 100%;
+    }
+
+    .infos-cursos{
+        margin-top: 20px;
+        margin-left: 0%;
+    }
+}
+
+.nav-active{
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+

@@ -1,0 +1,62 @@
+package view;
+
+import java.io.File;
+import java.io.IOException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import control.Aluno;
+
+/**
+ * Servlet implementation class SvUpdateAluno
+ */
+@WebServlet("/SvUpdateAluno")
+public class SvUpdateAluno extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		doPost(request, response);
+	}
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		File fotoPerfil = new File(request.getParameter("foto-perfil"));
+		String nome = request.getParameter("name");
+		String email = request.getParameter("email");
+		String senha = request.getParameter("password");
+		String cpf = request.getParameter("cpf");
+		String dateN = request.getParameter("date");
+		String nacionalidade = request.getParameter("nationality");
+		String sexo = request.getParameter("gender");
+		SimpleDateFormat formato = new SimpleDateFormat("dd/MM/yyyy"); 
+		Date dataNascimento = null;
+		try {
+			dataNascimento = formato.parse(dateN);
+		} catch (ParseException e) {
+			e.printStackTrace();
+		}
+		Aluno a = (Aluno) request.getSession().getAttribute("objUser");
+		
+		if(fotoPerfil != null && fotoPerfil != a.getFotoPerfil())
+			a.setFotoPerfil(fotoPerfil);
+		if(nome != null && !nome.isEmpty() && !nome.equalsIgnoreCase(a.getNome()))
+			a.setNome(nome);
+		if(email != null && !email.isEmpty() && !email.equalsIgnoreCase(a.getEmail()))
+			a.setEmail(email);
+		if(senha != null && !senha.isEmpty() && !senha.equalsIgnoreCase(a.getSenha()))
+			a.setSenha(senha);
+		if(cpf != null && !cpf.isEmpty() && !cpf.equalsIgnoreCase(a.getCpf()))
+			a.setNome(cpf);
+		if(nacionalidade != null && !nacionalidade.isEmpty() && !nacionalidade.equalsIgnoreCase(a.getNacionalidade()))
+			a.setNacionalidade(nacionalidade);
+		if(sexo != null && !sexo.isEmpty() && !sexo.equalsIgnoreCase(a.getSexo()))
+			a.setSexo(sexo);
+	}
+
+}

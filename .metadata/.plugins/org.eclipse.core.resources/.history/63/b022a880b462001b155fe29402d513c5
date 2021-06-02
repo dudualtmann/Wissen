@@ -1,0 +1,6 @@
+$(document).on('click', ".video",function(){
+	var link = $(this).attr("id");
+	
+	$('#video-src').attr('src', link);
+	$('#video-player').load();
+});

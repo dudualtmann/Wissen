@@ -1,0 +1,5 @@
+$(document).on('click', ".video",function(){
+	var link = $(this).attr("href");
+	
+	$('#video-src').attr('src', link);
+});

@@ -1,0 +1,67 @@
+/* Css Meus Cursos*/
+
+.main-section{
+    margin-top: 75px;
+    width: 100%;
+}
+
+.main-section h2{
+    text-align: center;
+}
+
+.h2-title{
+    font-family: 'Bree Serif', serif;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.courses-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-courses{
+    width: 100%;
+}
+
+.flex-div{
+    margin-left: 13%;
+    margin-bottom: 5%;
+}
+
+/* Card Style*/
+
+.buy-btn{
+    color: rgba(255, 255, 255, 1);
+    padding: 10px 24px;
+    font-family: 'Bree Serif', serif;
+    font-size: 17px;
+    letter-spacing: 0.05rem;
+    line-height: 1.88;
+    background-color: #1f9376;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10%;
+    width: 100%;
+}
+
+.buy-btn:hover{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+    background-color: #176955;
+}
+
+.price{
+    font-family: 'Bree Serif', serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #3C3B37;
+}
+
+.rating{
+    width: 100%;
+}
+
+.checked{
+    color: orange;
+}

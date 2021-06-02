@@ -1,0 +1,142 @@
+package control;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
+import javax.persistence.Transient;
+import javax.persistence.OneToMany;
+
+import org.hibernate.annotations.DynamicInsert;
+import org.hibernate.annotations.DynamicUpdate;
+import org.hibernate.annotations.SelectBeforeUpdate;
+
+import model.MModulo;
+
+@Entity
+@Table(name = "modulos")
+@DynamicUpdate(value = true)
+@SelectBeforeUpdate(value = true)
+@DynamicInsert(value = true)
+public class Modulo {
+	
+	@Transient
+	public String errorMsg;
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int id;
+	
+	@Column(nullable = false)
+	private String title;
+	
+	@OneToMany(cascade = CascadeType.ALL, mappedBy = "modulo")
+	private List<Aula> listaAulas;
+	
+	@ManyToOne
+	@JoinColumn(name = "curso_id")
+	private Curso cursoModulo;
+	
+	public Modulo() {
+		
+	}
+	
+	public Modulo(String title, Curso c) {
+		this.title = title;
+		this.cursoModulo = c;
+	}
+	
+	public boolean cadastrar() {
+		
+		listaAulas = new ArrayList<Aula>();
+		
+		MModulo mm = new MModulo();
+		
+		if(!mm.cadastrar(this)) {
+			errorMsg = mm.errorMsg;
+			return false;
+		}
+		
+		return true;
+	}
+	
+	public boolean findModulo(String id) {
+		if(id!=null && !id.isEmpty())
+			this.id = Integer.parseInt(id);
+		
+		MModulo mm = new MModulo();
+		
+		Modulo m = mm.findModulo(this);
+		if(m == null) {
+			errorMsg = mm.errorMsg;
+			return false;
+		}
+		
+		this.id = m.getId();
+		this.listaAulas = m.getListaAulas();
+		this.title = m.getTitle();
+		
+		return true;
+	}
+	
+	public List<Modulo> searchModulos(Curso c){
+		
+		if(c == null) {
+			errorMsg = "Curso não localizado";
+			return null;
+		}
+		
+		MModulo mm = new MModulo();
+		
+		List<Modulo> list = mm.searchModulos(c);
+		if(list == null) {
+			errorMsg = mm.errorMsg;
+			return null;
+		}
+		
+		return list;
+	}
+	
+	public List<Aula> getAulas(){
+		listaAulas 
+	}
+	
+	// Getters and Setters
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+	public List<Aula> getListaAulas() {
+		return listaAulas;
+	}
+
+	public void setListaAulas(List<Aula> listaAulas) {
+		this.listaAulas = listaAulas;
+	}
+	
+	
+	
+
+}

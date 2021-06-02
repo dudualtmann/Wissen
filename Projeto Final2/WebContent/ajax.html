@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<button id="btn1">Botão</button>
+
+<button id="btn2">Botão2</button>
+
+<div id="divteste" style="background-color: blue"></div>
+
+<div id="divteste2" style="background-color: red"></div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+$(document).on("click", "#btn1", function() { 
+    $.get("SvAjax",{nome: "pedro"}, function(responseText) {   
+        
+        $("#divteste").text(responseText);           
+    });
+});
+
+$(document).on("click", "#btn2", function() { 
+    $.ajax({url:"SvAjax", data: {nome:"jose"},type: "get", success: function(responseText) {   
+        
+        $("#divteste2").text(responseText);           
+    }});
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+/* home.css */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.main-col{
+    position: absolute;
+    left: 0;
+    width: 100vw;
+    background-color: rgba(244, 250, 255, 1);
+}
+
+.row-courses{
+    margin: 0 auto;
+    margin-top: 5%;
+    width: 80%;
+    height: 500px;
+}
+
+.row-one{
+    margin-top: 2%;
+}
+
+.buy-btn{
+    color: rgba(255, 255, 255, 1);
+    padding: 10px 24px;
+    font-family: 'Bree Serif', serif;
+    font-size: 17px;
+    letter-spacing: 0.05rem;
+    line-height: 1.88;
+    background-color: #1f9376;
+    border-radius: 10px;
+}
+
+.buy-btn:hover{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+    background-color: #176955;
+}
+
+.price{
+    font-family: 'Bree Serif', serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #3C3B37;
+}
+
+.rating{
+    width: 100%;
+}
+
+.checked{
+    color: orange;
+}
+
+.row-banner{
+    margin: 0 auto;
+    width: 80%;
+    border-radius: 10px;
+    background-color: #1aa783;
+    height: 100px;
+    box-shadow: -5px 10px 20px #0aa76b9d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-p{
+    font-family: 'Big Shoulders Inline Display', cursive;
+    letter-spacing: 00.05rem;
+    font-size: 50px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.wissen-img{
+    width: 200px;
+}
+
+.star-text{
+    color: rgb(175, 115, 2);
+    font-family: 'Bree Serif', serif;
+    font-weight: 100;
+    font-size: 15px;
+}
+
+.row-image{
+    margin: 0 auto;
+    margin-top: 7%;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.row-image img{
+    width: 250px;
+}
+
+
+
+@media screen and (max-width:768px){
+
+    .row-image{
+        margin-top: 20%;
+    }
+
+    .row-banner{
+        width: 90%;
+    }
+
+    .banner-p{
+        padding: 5px;
+        font-size: 30px;
+    }
+}
+
+/* CSS Home Instrutor */
+
+.form-curso{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 50px;
+    font-family: 'Bree Serif', serif;
+    box-shadow: -5px 10px 20px #0aa76b9d;
+}
+
+.row-create{
+    margin: 0 auto;
+    margin-top: 5%;
+    width: 80%;
+    margin-bottom: 5%;
+}
+
+.foto-capa:hover{
+    cursor: pointer;
+}
+
+.create-btn{
+    margin-top: 2%;
+    background-color: #218169;
+    color: #fff;
+    width: 100%;
+    border-radius: 3px;
+    height: 40px;
+    border: none;
+}
+
+.create-btn:hover{
+    background-color: #1aa783;
+}
+
+@media screen and (max-width: 768px){
+    .form-curso{
+        padding: 10px;
+    }
+}
+
+
