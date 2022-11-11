@@ -15,8 +15,7 @@ Developed for educational purposes.
  ###### *DISCLAIMER*: The Website is in Portuguese and all pages are responsible, but to spare space in the `Readme.md` not all pictures were shown.
  
 **Index page**<br>
- - `Here you can see the home page with different call to actions for Students and Instructors`
- <br>
+ - `Here you can see the home page with different call to actions for Students and Instructors`<br>
 ![Imagem1](https://user-images.githubusercontent.com/70068324/201413004-dd2afac8-671d-4843-b4b2-30c54730ae17.png)
 ![Imagem2](https://user-images.githubusercontent.com/70068324/201413040-b4af507b-73c9-48e3-ac3f-b4e7ef13bdd0.png)
 ![Imagem3](https://user-images.githubusercontent.com/70068324/201413051-50033386-f780-4549-9498-d1dde53f1c72.png)
