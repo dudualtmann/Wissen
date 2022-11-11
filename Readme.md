@@ -15,7 +15,7 @@ Developed for educational purposes.
  ###### *DISCLAIMER*: The Website is in Portuguese and all pages are responsible, but to spare space in the `Readme.md` not all pictures were shown.
  
 **Index page**<br>
- - `Here you can see the home page with different call to actions for Students and Instructors`<br>
+ - `Here you can see the home page with different call to actions for Students and Instructors`<br><br>
 ![Imagem1](https://user-images.githubusercontent.com/70068324/201413004-dd2afac8-671d-4843-b4b2-30c54730ae17.png)
 ![Imagem2](https://user-images.githubusercontent.com/70068324/201413040-b4af507b-73c9-48e3-ac3f-b4e7ef13bdd0.png)
 ![Imagem3](https://user-images.githubusercontent.com/70068324/201413051-50033386-f780-4549-9498-d1dde53f1c72.png)
@@ -34,7 +34,7 @@ Developed for educational purposes.
 **Cart*<br>
 ![cart](https://user-images.githubusercontent.com/70068324/201414407-909f11cf-64b4-4f22-acb1-f1e9f4ac9839.png)
 
-**Inside a course, showing a video and the modules.**<br>
+**`Inside a course, showing a video and the modules.`**<br>
 ![course](https://user-images.githubusercontent.com/70068324/201414498-8af72310-3e3a-4d67-a2c3-c608ca9b5c0c.png)
 
 **Class and Database Diagramms**<br>
