@@ -24,20 +24,20 @@ Developed for educational purposes.
 ![Imagem1mobile](https://user-images.githubusercontent.com/70068324/201413505-70300aa0-b267-4512-aa06-736427f31b84.png)
 ![menu mobile](https://user-images.githubusercontent.com/70068324/201413927-7d36e166-771c-49cb-94ae-bf33a07609a9.png)
 
-**Login page**<br><br>
+**`Login page`**<br><br>
 ![login](https://user-images.githubusercontent.com/70068324/201414029-9fe37bc7-6fde-4a5b-a5e0-bb7f30e6c6e6.png)
 
 **Home (after login)**<br>
  - `Here the user can see their courses and also the most popular ones in different categories to buy.`. <br><br>
 ![home](https://user-images.githubusercontent.com/70068324/201414157-9425ecf6-d12e-47d2-ac05-97c26a63b9e1.png)
 
-**Cart**<br><br>
+**`Cart`**<br><br>
 ![cart](https://user-images.githubusercontent.com/70068324/201414407-909f11cf-64b4-4f22-acb1-f1e9f4ac9839.png)
 
 **`Inside a course, showing a video and the modules.`**<br><br>
 ![course](https://user-images.githubusercontent.com/70068324/201414498-8af72310-3e3a-4d67-a2c3-c608ca9b5c0c.png)
 
-**Class and Database Diagramms**<br><br>
+**`Class and Database Diagramms`**<br><br>
 ![Class Diagram](https://user-images.githubusercontent.com/70068324/201414740-5794a39e-455c-4825-aaa8-8b9bfeb2697e.png)
 ![db](https://user-images.githubusercontent.com/70068324/201414781-f25ca7d0-abcd-4e86-86c5-81b7d02711c4.png)
 
