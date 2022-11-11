@@ -3,7 +3,7 @@ Developed for educational purposes.
 
 ## Technical specifications of the project
 
- - The project was developed following a MVC Architechture Pattern in Java.
+ - The project was developed following an MVC Architechture Pattern in Java.
  - The FrontEnd was developed using HTML/CSS and Javascript combined with other libraries such as Bootstrap 4 and JQuery.
  - The Website is fully responsive.
  - The Front/Back-end connection was made using Servlets and JSP files.
