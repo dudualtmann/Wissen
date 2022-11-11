@@ -12,7 +12,7 @@ Developed for educational purposes.
  > Everything from Webdesign, Front-end, Back-end to Database architechture was developed by Eduardo Altmann.
  
  ## Images from the Website
- ###### *DISCLAIMER*: The Website is in Portuguese and all pages are responsible, but to spare space in the `Readme.md` not all pictures were shown.
+ ###### *DISCLAIMER*: The Website is in Portuguese and all pages are responsible, but to spare space on the `Readme.md` file, not all pictures were shown.
  
 **Index page**<br>
  - `Here you can see the home page with different call to actions for Students and Instructors`<br><br>
