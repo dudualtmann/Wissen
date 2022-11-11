@@ -31,7 +31,7 @@ Developed for educational purposes.
  - `Here the user can see their courses and also the most popular ones in different categories to buy.`. <br><br>
 ![home](https://user-images.githubusercontent.com/70068324/201414157-9425ecf6-d12e-47d2-ac05-97c26a63b9e1.png)
 
-**Cart*<br><br>
+**Cart**<br><br>
 ![cart](https://user-images.githubusercontent.com/70068324/201414407-909f11cf-64b4-4f22-acb1-f1e9f4ac9839.png)
 
 **`Inside a course, showing a video and the modules.`**<br><br>
